@@ -49,3 +49,27 @@ Function => Object Function
 non primitive datatype => function
 
 */
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "Utkarsh"
+
+let anothername = myName
+anothername = "uhd";
+console.log(myName);
+console.log(anothername);
+
+let user1 ={
+    email : "user@google.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1
+
+user2.email = "ud@google.com"
+
+console.log(user1.email);
+console.log(user2.email);
