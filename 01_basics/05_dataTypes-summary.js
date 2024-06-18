@@ -47,3 +47,5 @@ String => string
 Symbol => Symbol
 Function => Object Function
 non primitive datatype => function
+
+*/
