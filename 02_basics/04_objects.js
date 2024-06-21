@@ -1,3 +1,5 @@
+const { json } = require("body-parser")
+
 // const twitterUser = new Object()
 const twitterUser ={}
 
@@ -46,11 +48,36 @@ email: "us@gmail.com"
 ]
 
 users[1].email
-console.log(twitterUser);
+// console.log(twitterUser);
 
-console.log(Object.keys(twitterUser));
-console.log(Object.values(twitterUser));
-console.log(Object.entries(twitterUser));
+// console.log(Object.keys(twitterUser));
+// console.log(Object.values(twitterUser));
+// console.log(Object.entries(twitterUser));
 
-console.log(twitterUser.hasOwnProperty('isLoggedIn'));
+// console.log(twitterUser.hasOwnProperty('isLoggedIn'));
 
+
+const course ={
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : " hitesh sir"
+}
+
+// course.courseInstructor
+
+const { courseInstructor : instructor } = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// {
+//    " name" : "utkarsh",
+//     "coursename":"js in hindi",
+//     "price ":"free",
+// }
+
+// {
+//     {},
+//     {},
+//     {}
+// }
