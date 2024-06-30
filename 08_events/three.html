@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+
+<script>
+document.getElementById("start").addEventListener("click", function() {
+    const date = function(str){
+        console.log("Interval is Started");
+        console.log(str,Date.now());
+    }
+    const start = setInterval(date,2000,"Namaste Duniya")
+});
+
+document.getElementById("stop").addEventListener("click", function() {
+    clearInterval(start);
+    console.log("stopped");
+});
+</script>
+</html>
